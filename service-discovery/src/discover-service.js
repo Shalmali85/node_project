@@ -4,25 +4,25 @@ class discoverService {}
 discoverService.discover = function (patterns, options, callback) {
   const servicesMap = new Map();
   cloudInfo(options).then((cfRoutes) => {
-      patterns.forEach((pattern) => {
-        for (let i = 0; i < cfRoutes.length; i += 1) {
-          let serviceName = '';
-          if (pattern && pattern.pin) {
-            const name = pattern.pin.split(':');
-            serviceName = name[1].split(',');
-          }
-          if (pattern.pin && cfRoutes[i].name === serviceName[0]) {
-            servicesMap.set(pattern.pin, {
-              host: cfRoutes[i].url,
-              port: 443,
-              protocol: 'https',
-              timeout: 60000,
-            });
-            break;
-          }
+    patterns.forEach((pattern) => {
+      for (let i = 0; i < cfRoutes.length; i += 1) {
+        let serviceName = '';
+        if (pattern && pattern.pin) {
+          const name = pattern.pin.split(':');
+          serviceName = name[1].split(',');
         }
-      });
-      return callback(null, servicesMap);
+        if (pattern.pin && cfRoutes[i].name === serviceName[0]) {
+          servicesMap.set(pattern.pin, {
+            host: cfRoutes[i].url,
+            port: 443,
+            protocol: 'https',
+            timeout: 60000,
+          });
+          break;
+        }
+      }
+    });
+    return callback(null, servicesMap);
   }).catch(err => callback(err, null));
 };
 
