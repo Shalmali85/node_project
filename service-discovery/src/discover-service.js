@@ -4,7 +4,6 @@ class discoverService {}
 discoverService.discover = function (patterns, options, callback) {
   const servicesMap = new Map();
   cloudInfo(options).then((cfRoutes) => {
-    if (cfRoutes) {
       patterns.forEach((pattern) => {
         for (let i = 0; i < cfRoutes.length; i += 1) {
           let serviceName = '';
@@ -24,9 +23,9 @@ discoverService.discover = function (patterns, options, callback) {
         }
       });
       return callback(null, servicesMap);
-    }
   }).catch(err => callback(err, null));
 };
+
 function cloudInfo(options) {
   return new Promise((resolve, reject) => {
     const endpoint = process.env.DOMAIN || options.domain;
