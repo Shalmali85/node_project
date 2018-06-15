@@ -9,26 +9,23 @@ function service(options) {
   }
 }
 
-service.prototype.find = function (pin) {
-  return makeMiddleWare(pin, opt);
-};
-function makeMiddleWare(pins, opt) {
-  return (req, res, callback) => {
+function createMiddleWare(pins, opt) {
+  return (req, res, next) => {
     if (!pins || !(pins instanceof Array)) {
-      return callback(new Error('options must be an array'), null);
+      return next(new Error('options must be an array'), null);
     }
     pins.forEach((pattern) => {
       if (pattern && pattern.pin) {
         const name = pattern.pin.split(':');
-        if (name.length != 2) {
-          return callback(new Error('Not a valid pattern. Valid formats role:service name or cmd:service name '));
+        if (name.length !== 2) {
+          return next(new Error('Not a valid pattern. Valid formats role:service name or cmd:service name '));
         }
       }
     });
     const cachedvalue = cache.get('services');
     if (cachedvalue) {
       req.clientUrl = cachedvalue;
-      return callback(null, cachedvalue);
+      return next();
     }
 
     serviceDiscovery.discover(pins, opt, (err, response) => {
@@ -36,11 +33,16 @@ function makeMiddleWare(pins, opt) {
         console.log(response);
         req.clientUrl = response;
         cache.set('services', response, 1800);
-        return callback(null, response);
+        return next();
       }
-      return callback(err);
+      return next(err);
     });
   };
 }
-module.exports = makeMiddleWare;
+
+service.prototype.find = function (pin) {
+  return createMiddleWare(pin, opt);
+};
+
+module.exports = createMiddleWare;
 module.exports = service;
