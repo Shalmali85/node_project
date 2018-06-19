@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow,consistent-return */
 const serviceDiscovery = require('./discover-service-pcf');
 const Cache = require('node-cache');
 
@@ -31,9 +32,8 @@ function createMiddleWare(pins, opt) {
         if (name.length !== 2) {
           return next(new Error('Not a valid pattern. Valid formats role:service name or cmd:service name '));
         }
-      }
-      else {
-          return next(new Error('Pattern or Pin identifier missing '));
+      } else {
+        return next(new Error('Pattern or Pin identifier missing '));
       }
     });
     const cachedvalue = cache.get('services');
@@ -42,13 +42,12 @@ function createMiddleWare(pins, opt) {
       return next();
     }
     serviceDiscovery.discover(pins, opt, (err, response) => {
-      if (response && response.size>0) {
+      if (response && response.size > 0) {
         req.clientUrl = response;
         cache.set('services', response, 1800);
         return next();
       }
       return next(err);
-
     });
   };
 }

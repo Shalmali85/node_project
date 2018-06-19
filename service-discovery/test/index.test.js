@@ -94,7 +94,7 @@ describe('MiddleWare exception test', () => {
 
   it('should return an error  when pattern is null or pin identifier missing ', (done) => {
     const middleWare = new MiddleWare(options);
-    run(null, middleWare.find([{ pin: 'test' }, {}]), (err) => {
+    run(null, middleWare.find([{ pin: 'role:test' }, {}]), (err) => {
       expect(err).to.be.instanceOf(Error);
       done();
     });
