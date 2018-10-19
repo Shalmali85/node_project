@@ -3,7 +3,7 @@ applications:
 - name: web_push_notifier
   host: web_push_notifier
   memory: 128M
-  command: node incidents/src/app.js
+  command: node notifier/src/server.js
   buildpack: https://github.com/cloudfoundry/nodejs-buildpack
   env:
     NODE_ENV: development
