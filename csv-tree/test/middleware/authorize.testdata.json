@@ -1,0 +1,174 @@
+{
+  "c1": {
+    "config": {
+      "auth": {
+        "jwksUrl": "http://localhost:30000",
+        "issuer": "authority-figure",
+        "audience": "someone-who-cares"
+      }
+    },
+    "request": {
+      "headers": {
+        "authorization": "Bearer MYTOKEN"
+      }
+    },
+    "claims": {
+      "username": "me!",
+      "company": "ACME"
+    },
+    "expected": {
+      "config": {
+        "auth": {
+          "jwksUrl": "http://localhost:30000",
+          "issuer": "authority-figure",
+          "audience": "someone-who-cares"
+        }
+      },
+      "token": "MYTOKEN",
+      "claims": {
+        "username": "me!",
+        "company": "ACME"
+      },
+      "adiitionaLClaims": {
+        "username": "me!",
+        "company": "ACME",
+        "token": "Bearer MYTOKEN"
+      }
+    }
+  },
+  "c2": {
+    "request": {
+      "headers": {
+      }
+    }
+  },
+  "c3": {
+    "request": {
+      "headers": {
+        "authorization": "NOT A BEARER TOKEN!"
+      }
+    }
+  },
+  "c4": {
+    "config": {
+      "auth": {
+        "jwksUrl": "http://localhost:30000",
+        "issuer": "authority-figure",
+        "audience": "someone-who-cares"
+      }
+    },
+    "request": {
+      "headers": {
+        "authorization": "Bearer MYTOKEN"
+      }
+    },
+    "verror": {
+      "name": "VerifyError",
+      "message": "The presented token is invalid."
+    },
+    "expected": {
+      "config": {
+        "auth": {
+          "jwksUrl": "http://localhost:30000",
+          "issuer": "authority-figure",
+          "audience": "someone-who-cares"
+        }
+      },
+      "token": "MYTOKEN"
+    }
+  },
+  "c5": {
+    "config": {
+      "auth": {
+        "jwksUrl": "http://localhost:30000",
+        "issuer": "authority-figure",
+        "audience": "someone-who-cares"
+      }
+    },
+    "request": {
+      "headers": {
+        "authorization": "Bearer MYTOKEN"
+      }
+    },
+    "verror": {
+      "name": "VerifyExpiredError",
+      "message": "The presented token has expired."
+    },
+    "expected": {
+      "config": {
+        "auth": {
+          "jwksUrl": "http://localhost:30000",
+          "issuer": "authority-figure",
+          "audience": "someone-who-cares"
+        }
+      },
+      "token": "MYTOKEN"
+    }
+  },
+  "c6": {
+    "config": {
+      "auth": {
+        "jwksUrl": "http://localhost:30000",
+        "issuer": "authority-figure",
+        "audience": "someone-who-cares"
+      }
+    },
+    "request": {
+      "headers": {
+        "authorization": "Bearer MYTOKEN"
+      }
+    },
+    "verror": {
+      "name": "VerifyRuntimeError",
+      "message": "The presented token has expired."
+    },
+    "expected": {
+      "config": {
+        "auth": {
+          "jwksUrl": "http://localhost:30000",
+          "issuer": "authority-figure",
+          "audience": "someone-who-cares"
+        }
+      },
+      "token": "MYTOKEN"
+    }
+  },
+  "c7": {
+  "config": {
+    "auth": {
+      "jwksUrl": "http://localhost:30000",
+      "issuer": "authority-figure",
+      "audience": "someone-who-cares"
+    }
+  },
+  "request": {
+    "headers": {
+      "authorization": "Bearer MYTOKEN",
+      "company-id": "12345"
+    }
+  },
+  "claims": {
+    "username": "me!",
+    "company": "ACME"
+  },
+  "expected": {
+    "config": {
+      "auth": {
+        "jwksUrl": "http://localhost:30000",
+        "issuer": "authority-figure",
+        "audience": "someone-who-cares"
+      }
+    },
+    "token": "MYTOKEN",
+    "claims": {
+      "username": "me!",
+      "company": "ACME"
+    },
+    "adiitionaLClaims": {
+      "username": "me!",
+      "company": "12345",
+      "token": "Bearer MYTOKEN"
+    }
+  }
+}
+}

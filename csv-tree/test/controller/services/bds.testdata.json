@@ -1,0 +1,219 @@
+{
+  "data": {
+    "code": 200,
+    "status": 200,
+    "message": "Success",
+    "correlationId": "042d9ccb-99ee-407a-9e92-45148df7142b",
+    "billingAccountNumber": 7000965228,
+    "invoices": [
+      {
+        "invoiceNumber": "1479432",
+        "payments": [
+          {
+            "amount": 8,
+            "date": "2018-05-30"
+          },
+          {
+            "amount": 10,
+            "date": "2018-05-30"
+          },
+          {
+            "amount": 10,
+            "date": "2018-05-30"
+          },
+          {
+            "amount": 10,
+            "date": "2018-05-30"
+          },
+          {
+            "amount": 10,
+            "date": "2018-05-30"
+          },
+          {
+            "amount": 8,
+            "date": "2018-06-04"
+          },
+          {
+            "amount": 8,
+            "date": "2018-06-13"
+          },
+          {
+            "amount": 1,
+            "date": "2018-06-18"
+          },
+          {
+            "amount": 1,
+            "date": "2018-06-19"
+          },
+          {
+            "amount": 1,
+            "date": "2018-06-19"
+          },
+          {
+            "amount": 1,
+            "date": "2018-07-05"
+          },
+          {
+            "amount": 1,
+            "date": "2018-07-05"
+          },
+          {
+            "amount": 1,
+            "date": "2018-07-05"
+          },
+          {
+            "amount": 1,
+            "date": "2018-07-23"
+          },
+          {
+            "amount": 1,
+            "date": "2018-07-23"
+          }
+        ]
+      }
+    ]
+  },
+  "token": {
+    "access_token": "lSwIPGzurEtxvAKhjqjN4L",
+    "token_type": "Bearer",
+    "expires_in": "3599"
+  },
+  "accounts": {
+    "code": 200,
+    "status": 200,
+    "message": "Success",
+    "customer": {
+      "companyName": "MLC Company Ltd.",
+      "abn": "51824753556",
+      "billingAccounts": [
+        {
+          "billingAccountNumber": "700000000012",
+          "status": "Active"
+        }
+      ]
+    }
+  },
+  "transactions": {
+    "code": 200,
+    "status": 200,
+    "message": "Success",
+    "billingAccountNumber": 700000006069,
+    "payments": [
+      {
+        "transactionId": 195883843,
+        "paymentAmount": 4000,
+        "paymentDate": "12/06/2018",
+        "paymentUnappliedAmount": 4000
+      },
+      {
+        "transactionId": 195870322,
+        "paymentAmount": 4000,
+        "paymentDate": "07/06/2018",
+        "paymentUnappliedAmount": 3400
+      },
+      {
+        "transactionId": 195862227,
+        "paymentAmount": 20,
+        "paymentDate": "06/06/2018",
+        "paymentUnappliedAmount": 0
+      }
+    ]
+  },
+  "invoices":{
+    "code":200,
+    "status":200,
+    "message":"Success",
+    "billingAccountNumber":700000006069,
+    "payments":[
+      {
+        "transactionId":"195870322",
+        "paymentAmount":4000,
+        "paymentDate":"07/06/2018",
+        "paymentUnappliedAmount":3400,
+        "paymentApplicationDetails":[
+          {
+            "invoiceNumber":"9900000002311",
+            "invoiceDate":"29/08/2018",
+            "amountApplied":55,
+            "amountTotalPaid":55,
+            "balanceDue":0
+          },
+          {
+            "invoiceNumber":"9900000001891",
+            "invoiceDate":"29/07/2018",
+            "amountApplied":55,
+            "amountTotalPaid":55,
+            "balanceDue":0
+          },
+          {
+            "invoiceNumber":"9900000001522",
+            "invoiceDate":"29/06/2018",
+            "amountApplied":55,
+            "amountTotalPaid":55,
+            "balanceDue":0
+          },
+          {
+            "invoiceNumber":"9900000000841",
+            "invoiceDate":"29/05/2018",
+            "amountApplied":55,
+            "amountTotalPaid":55,
+            "balanceDue":0
+          },
+          {
+            "invoiceNumber":"990000206",
+            "invoiceDate":"04/05/2018",
+            "amountApplied":50,
+            "amountTotalPaid":50,
+            "balanceDue":0
+          },
+          {
+            "invoiceNumber":"990000186",
+            "invoiceDate":"03/05/2018",
+            "amountApplied":50,
+            "amountTotalPaid":50,
+            "balanceDue":0
+          },
+          {
+            "invoiceNumber":"990000171",
+            "invoiceDate":"02/05/2018",
+            "amountApplied":50,
+            "amountTotalPaid":50,
+            "balanceDue":0
+          },
+          {
+            "invoiceNumber":"990000157",
+            "invoiceDate":"01/05/2018",
+            "amountApplied":50,
+            "amountTotalPaid":50,
+            "balanceDue":0
+          },
+          {
+            "invoiceNumber":"990000142",
+            "invoiceDate":"30/04/2018",
+            "amountApplied":50,
+            "amountTotalPaid":50,
+            "balanceDue":0
+          },
+          {
+            "invoiceNumber":"990000130",
+            "invoiceDate":"29/04/2018",
+            "amountApplied":50,
+            "amountTotalPaid":50,
+            "balanceDue":0
+          },
+          {
+            "invoiceNumber":"990000112",
+            "invoiceDate":"28/04/2018",
+            "amountApplied":50,
+            "amountTotalPaid":50,
+            "balanceDue":0
+          }
+
+        ]
+      }
+    ]
+  }
+
+
+
+}

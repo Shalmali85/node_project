@@ -1,0 +1,369 @@
+{
+
+    "data": {
+  "customerAddress":{
+    "companyName":"JB Finance Pvt Limited2",
+    "addressLine1":"150 Lonsdale",
+    "addressCity":"MELBOURNE",
+    "stateAndPostalCode":"VIC 3000"
+  },
+  "invoiceDetails":{
+    "invoiceIssueDate":"29 Oct 18",
+    "invoicePeriod":"01 Oct 18 - 29 Oct 18",
+    "invoiceNumber":"9900000001164",
+    "accountNumber":"200034767920"
+  },
+  "paymentSummary":{
+    "balanceCarriedForward":0,
+    "totalDue":3602.36,
+    "paymentsReceivedLastPeriod":0,
+    "dueDate":"28 Nov 18",
+    "newCharges":3602.36
+  },
+  "serviceSummary":{
+    "lineLevelDetails":[
+      {
+        "physicalLocationName":"150 lonsdale street",
+        "siteExcludingGstCost":3274.86,
+        "siteIncludingGstCost":3602.36,
+        "offerName":"Connected Workplace",
+        "listOfSiteServicesAndCharges":[
+          {
+            "serviceType":"Fixed Seat (Zone 3)",
+            "quantity":1,
+            "excludingGstCost":200.56,
+            "includingGstCost":220.62,
+            "sigmaSpecId":"BSRC001_CB",
+            "startDate":"01 Nov",
+            "endDate":"30 Nov"
+          },
+          {
+            "serviceType":"Fax Line (Zone 3)",
+            "quantity":1,
+            "excludingGstCost":300.67,
+            "includingGstCost":330.74,
+            "sigmaSpecId":"BSRC001_CB",
+            "startDate":"01 Nov",
+            "endDate":"30 Nov"
+          },
+          {
+            "serviceType":"Fax Line (Zone 3)",
+            "quantity":1,
+            "excludingGstCost":370,
+            "includingGstCost":407,
+            "sigmaSpecId":"BSRC001_CB",
+            "startDate":"01 Nov",
+            "endDate":"30 Nov"
+          },
+          {
+            "serviceType":"Fax Line (Zone 3)",
+            "quantity":1,
+            "excludingGstCost":750.49,
+            "includingGstCost":825.54,
+            "sigmaSpecId":"BSRC001_CB",
+            "startDate":"01 Nov",
+            "endDate":"30 Nov"
+          },
+          {
+            "serviceType":"Polycom VVX 411",
+            "quantity":1,
+            "excludingGstCost":600.6,
+            "includingGstCost":660.66,
+            "sigmaSpecId":"BSOTC001_CB"
+          },
+          {
+            "serviceType":"Polycom VVX 411",
+            "quantity":1,
+            "excludingGstCost":500.89,
+            "includingGstCost":550.98,
+            "sigmaSpecId":"BSOTC001_CB"
+          },
+          {
+            "serviceType":"Polycom VVX 411",
+            "quantity":1,
+            "excludingGstCost":400.78,
+            "includingGstCost":440.86,
+            "sigmaSpecId":"BSOTC001_CB"
+          },
+          {
+            "serviceType":"Polycom VVX 411",
+            "quantity":1,
+            "excludingGstCost":150.87,
+            "includingGstCost":165.96,
+            "sigmaSpecId":"BSOTC001_CB"
+          }
+        ]
+      },
+      {
+        "physicalLocationName":"240 lonsdale street",
+        "siteExcludingGstCost":3274.86,
+        "siteIncludingGstCost":3602.36,
+        "offerName":"Connected 3",
+        "listOfSiteServicesAndCharges":[
+          {
+            "serviceType":"Fixed Seat (Zone 3)",
+            "quantity":1,
+            "excludingGstCost":200.56,
+            "includingGstCost":220.62,
+            "sigmaSpecId":"BSRC001_CB",
+            "startDate":"01 Nov",
+            "endDate":"30 Nov"
+          },
+          {
+            "serviceType":"Fax Line (Zone 3)",
+            "quantity":1,
+            "excludingGstCost":300.67,
+            "includingGstCost":330.74,
+            "sigmaSpecId":"BSRC001_CB",
+            "startDate":"01 Nov",
+            "endDate":"30 Nov"
+          },
+          {
+            "serviceType":"Fax Line (Zone 3)",
+            "quantity":1,
+            "excludingGstCost":370,
+            "includingGstCost":407,
+            "sigmaSpecId":"BSRC001_CB",
+            "startDate":"01 Nov",
+            "endDate":"30 Nov"
+          },
+          {
+            "serviceType":"Fax Line (Zone 3)",
+            "quantity":1,
+            "excludingGstCost":750.49,
+            "includingGstCost":825.54,
+            "sigmaSpecId":"BSRC001_CB",
+            "startDate":"01 Nov",
+            "endDate":"30 Nov"
+          }
+        ]
+      }
+    ],
+    "accountLevelChargesAndCredits":{
+      "adjustmentsExcludingGstCost":0,
+      "adjustmentsIncludingGstCost":0,
+      "grossTotalBill":3602.36,
+      "amountOfGstIncludedInGrossTotalBill":327.5,
+      "totalNewChargesInThisBill":3602.36,
+      "gstFreeItemsIncludedInNewCharges":0,
+      "gstIncludedInNewCharges":327.5,
+      "gstIncludedInAdjustments":0
+    }
+  }
+},
+
+  "responseData": {"customerAddress":{"companyName":"JB Finance Pvt Limited2","addressLine1":"150 Lonsdale","stateAndPostalCode":"VIC 3000","city":"MELBOURNE"},"paymentSummary":{"balanceCarriedForward":0,"totalDue":3602.36,"paymentsReceivedLastPeriod":0,"dueDate":"2018-11-28T00:00:00","newCharges":3602.36},"serviceSummary":{"accountLevelChargesAndCredits":{"grossTotalBill":3602.36,"amountOfGstIncludedInGrossTotalBill":327.5,"gstFreeItemsIncludedInNewCharges":0,"gstIncludedInNewCharges":327.5,"gstIncludedInAdjustments":0,"adjustmentsExcludingGst":0,"adjustmentsIncludingGst":0,"totalNewChargesInBill":3602.36},"sites":[{"physicalLocationName":"150 lonsdale street","siteCostExcludingGst":3274.86,"siteCostIncludingGst":3602.36,"offerName":"Connected Workplace","servicesAndCharges":{"outOfPlanCharges":[{"serviceType":"Fixed Seat (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":200.56,"costIncludingGst":220.62},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":300.67,"costIncludingGst":330.74},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":370,"costIncludingGst":407},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":750.49,"costIncludingGst":825.54}],"onceOffCharges":[{"serviceType":"Polycom VVX 411","quantity":1,"costExcludingGst":600.6,"costIncludingGst":660.66},{"serviceType":"Polycom VVX 411","quantity":1,"costExcludingGst":500.89,"costIncludingGst":550.98},{"serviceType":"Polycom VVX 411","quantity":1,"costExcludingGst":400.78,"costIncludingGst":440.86},{"serviceType":"Polycom VVX 411","quantity":1,"costExcludingGst":150.87,"costIncludingGst":165.96}]}},{"physicalLocationName":"240 lonsdale street","siteCostExcludingGst":3274.86,"siteCostIncludingGst":3602.36,"offerName":"Connected 3","servicesAndCharges":{"outOfPlanCharges":[{"serviceType":"Fixed Seat (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":200.56,"costIncludingGst":220.62},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":300.67,"costIncludingGst":330.74},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":370,"costIncludingGst":407},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":750.49,"costIncludingGst":825.54}]}}]},"invoiceSummary":{"issueDate":"2018-10-29T00:00:00","period":"01 Oct 18 - 29 Oct 18","accountId":"200034767920","invoiceNumber":"9900000001164"}},
+  "responseDataCsv": {
+    "customerAddress":{
+      "companyName":"JB Finance Pvt Limited2",
+      "addressLine1":"150 Lonsdale",
+      "stateAndPostalCode":"VIC 3000",
+      "city":"MELBOURNE"
+    },
+    "paymentSummary":{
+      "balanceCarriedForward":0,
+      "totalDue":3602.36,
+      "paymentsReceivedLastPeriod":0,
+      "dueDate":"2018-11-28T00:00:00",
+      "newCharges":3602.36
+    },
+    "serviceSummary":{
+      "accountLevelChargesAndCredits":{
+        "grossTotalBill":3602.36,
+        "amountOfGstIncludedInGrossTotalBill":327.5,
+        "gstFreeItemsIncludedInNewCharges":0,
+        "gstIncludedInNewCharges":327.5,
+        "gstIncludedInAdjustments":0,
+        "adjustmentsExcludingGst":0,
+        "adjustmentsIncludingGst":0,
+        "totalNewChargesInBill":3602.36
+      },
+      "sites":[
+        {
+          "physicalLocationName":"150 lonsdale street",
+          "siteCostExcludingGst":3274.86,
+          "siteCostIncludingGst":3602.36,
+          "offerName":"Connected Workplace",
+          "servicesAndCharges":{
+            "outOfPlanCharges":[
+              {
+                "serviceType":"Fixed Seat (Zone 3)-01 Nov to 30 Nov",
+                "quantity":1,
+                "costExcludingGst":200.56,
+                "costIncludingGst":220.62
+              }
+            ],
+            "onceOffCharges":[
+              {
+                "serviceType":"Polycom VVX 411-undefined to undefined",
+                "quantity":1,
+                "costExcludingGst":600.6,
+                "costIncludingGst":660.66
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "invoiceSummary":{
+      "issueDate":"2018-10-29T00:00:00",
+      "period":"01 Oct 18 - 29 Oct 18",
+      "accountId":"200034767920",
+      "invoiceNumber":"9900000001164"
+    }
+  },
+
+  "invalidData": {
+    "customerAddress": {
+      "companyName": "Company Ltd.",
+      "addressLine1": "Unit 1 1234 Lostmy Way",
+      "addressLine2": "",
+      "addressLine3": "",
+      "addressCity": "Melbourne",
+      "stateAndPostalCode": "VIC 3001"
+    },
+    "invoiceDetails": {
+      "invoicePeriod": "01 Apr 18 - 30 Apr 18",
+      "invoiceNumber": "9900000000046",
+      "accountNumber": "200034767920"
+    },
+    "paymentSummary": {
+      "paymentsReceivedLastPeriod": 0,
+      "balanceCarriedForward": 880,
+      "newCharges": 440,
+      "totalDue": 1320
+    },
+    "serviceSummary":{
+      "lineLevelDetails":[
+        {
+          "physicalLocationName":"150 lonsdale street",
+          "siteExcludingGstCost":3274.86,
+          "siteIncludingGstCost":3602.36,
+          "offerName":"Connected Workplace",
+          "listOfSiteServicesAndCharges":[
+            {
+              "serviceType":"Fixed Seat (Zone 3)",
+              "quantity":1,
+              "excludingGstCost":200.56,
+              "includingGstCost":220.62,
+              "sigmaSpecId":"BSRC001_CB",
+              "startDate":"01 Nov",
+              "endDate":"30 Nov"
+            },
+            {
+              "serviceType":"Fax Line (Zone 3)",
+              "quantity":1,
+              "excludingGstCost":300.67,
+              "includingGstCost":330.74,
+              "sigmaSpecId":"BSRC001_CB",
+              "startDate":"01 Nov",
+              "endDate":"30 Nov"
+            },
+            {
+              "serviceType":"Fax Line (Zone 3)",
+              "quantity":1,
+              "excludingGstCost":370,
+              "includingGstCost":407,
+              "sigmaSpecId":"BSRC001_CB",
+              "startDate":"01 Nov",
+              "endDate":"30 Nov"
+            },
+            {
+              "serviceType":"Fax Line (Zone 3)",
+              "quantity":1,
+              "excludingGstCost":750.49,
+              "includingGstCost":825.54,
+              "sigmaSpecId":"BSRC001_CB",
+              "startDate":"01 Nov",
+              "endDate":"30 Nov"
+            },
+            {
+              "serviceType":"Polycom VVX 411",
+              "quantity":1,
+              "excludingGstCost":600.6,
+              "includingGstCost":660.66,
+              "sigmaSpecId":"BSOTC001_CB"
+            },
+            {
+              "serviceType":"Polycom VVX 411",
+              "quantity":1,
+              "excludingGstCost":500.89,
+              "includingGstCost":550.98,
+              "sigmaSpecId":"BSOTC001_CB"
+            },
+            {
+              "serviceType":"Polycom VVX 411",
+              "quantity":1,
+              "excludingGstCost":400.78,
+              "includingGstCost":440.86,
+              "sigmaSpecId":"BSOTC001_CB"
+            },
+            {
+              "serviceType":"Polycom VVX 411",
+              "quantity":1,
+              "excludingGstCost":150.87,
+              "includingGstCost":165.96,
+              "sigmaSpecId":"BSOTC001_CB"
+            }
+          ]
+        },
+        {
+          "physicalLocationName":"240 lonsdale street",
+          "siteExcludingGstCost":3274.86,
+          "siteIncludingGstCost":3602.36,
+          "offerName":"Connected 3",
+          "listOfSiteServicesAndCharges":[
+            {
+              "serviceType":"Fixed Seat (Zone 3)",
+              "quantity":1,
+              "excludingGstCost":200.56,
+              "includingGstCost":220.62,
+              "sigmaSpecId":"BSRC001_CB",
+              "startDate":"01 Nov",
+              "endDate":"30 Nov"
+            },
+            {
+              "serviceType":"Fax Line (Zone 3)",
+              "quantity":1,
+              "excludingGstCost":300.67,
+              "includingGstCost":330.74,
+              "sigmaSpecId":"BSRC001_CB",
+              "startDate":"01 Nov",
+              "endDate":"30 Nov"
+            },
+            {
+              "serviceType":"Fax Line (Zone 3)",
+              "quantity":1,
+              "excludingGstCost":370,
+              "includingGstCost":407,
+              "sigmaSpecId":"BSRC001_CB",
+              "startDate":"01 Nov",
+              "endDate":"30 Nov"
+            },
+            {
+              "serviceType":"Fax Line (Zone 3)",
+              "quantity":1,
+              "excludingGstCost":750.49,
+              "includingGstCost":825.54,
+              "sigmaSpecId":"BSRC001_CB",
+              "startDate":"01 Nov",
+              "endDate":"30 Nov"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "invalidResponseData": {"customerAddress":{"companyName":"Company Ltd.","addressLine1":"Unit 1 1234 Lostmy Way","addressLine2":"","addressLine3":"","stateAndPostalCode":"VIC 3001","city":"Melbourne"},"paymentSummary":{"paymentsReceivedLastPeriod":0,"balanceCarriedForward":880,"newCharges":440,"totalDue":1320,"dueDate":""},"serviceSummary":{"sites":[{"physicalLocationName":"150 lonsdale street","siteCostExcludingGst":3274.86,"siteCostIncludingGst":3602.36,"offerName":"Connected Workplace","servicesAndCharges":{"outOfPlanCharges":[{"serviceType":"Fixed Seat (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":200.56,"costIncludingGst":220.62},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":300.67,"costIncludingGst":330.74},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":370,"costIncludingGst":407},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":750.49,"costIncludingGst":825.54}],"onceOffCharges":[{"serviceType":"Polycom VVX 411","quantity":1,"costExcludingGst":600.6,"costIncludingGst":660.66},{"serviceType":"Polycom VVX 411","quantity":1,"costExcludingGst":500.89,"costIncludingGst":550.98},{"serviceType":"Polycom VVX 411","quantity":1,"costExcludingGst":400.78,"costIncludingGst":440.86},{"serviceType":"Polycom VVX 411","quantity":1,"costExcludingGst":150.87,"costIncludingGst":165.96}]}},{"physicalLocationName":"240 lonsdale street","siteCostExcludingGst":3274.86,"siteCostIncludingGst":3602.36,"offerName":"Connected 3","servicesAndCharges":{"outOfPlanCharges":[{"serviceType":"Fixed Seat (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":200.56,"costIncludingGst":220.62},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":300.67,"costIncludingGst":330.74},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":370,"costIncludingGst":407},{"serviceType":"Fax Line (Zone 3)-01 Nov to 30 Nov","quantity":1,"costExcludingGst":750.49,"costIncludingGst":825.54}]}}]},"invoiceSummary":{"issueDate":"","period":"01 Apr 18 - 30 Apr 18","accountId":"200034767920","invoiceNumber":"9900000000046"}},
+
+  "latestDueResponse":{
+    "totalDue":1655.5,
+    "dueDate":"2018-06-15T00:00:00",
+    "invoiceNumber":"9900000001164"
+  },
+  "latestInvalidDueResponse":{
+    "totalDue":1655.5,
+    "dueDate":"",
+    "invoiceNumber":"9900000001164"
+  }
+}

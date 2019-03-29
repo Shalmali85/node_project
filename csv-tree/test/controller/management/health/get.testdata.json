@@ -1,0 +1,17 @@
+{
+  "c1": {
+    "request": {
+      "args": {
+        "username": "me!",
+        "company": "12345"
+      }
+    },
+    "reply": "Placeholder",
+    "expected": {
+      "payload": {
+        "status": "UP"
+      },
+      "statusCode": 200
+    }
+  }
+}

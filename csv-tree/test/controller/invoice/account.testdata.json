@@ -1,0 +1,129 @@
+{
+  "responseData": {
+    "cidn": 15054,
+    "billingAccounts": [
+      {
+        "name": "700000000012",
+        "value": "700000000012"
+      }
+    ]
+  },
+  "data": {
+    "code": 200,
+    "status": 200,
+    "message": "Success",
+    "customer": {
+      "companyName": "MLC Company Ltd.",
+      "abn": "51824753556",
+      "billingAccounts": [
+        {
+          "billingAccountNumber": "700000000012",
+          "status": "Active"
+        }
+      ]
+    }
+  },
+  "emptyAccountsData": {
+    "code": 200,
+    "status": 200,
+    "message": "Success",
+    "customer": {
+      "companyName": "MLC Company Ltd.",
+      "abn": "51824753556",
+      "billingAccounts": []
+    },
+    "invalidResponseData": {
+      "billingAccountNumber": 7000965228,
+      "invoiceNumber": "1479432",
+      "payments": [
+        {
+          "amount": 8,
+          "date": "2018-05-30T00:00:00+00:00"
+        },
+        {
+          "amount": 10,
+          "date": "2018-05-30T00:00:00+00:00"
+        },
+        {
+          "amount": 10,
+          "date": ""
+        },
+        {
+          "amount": 10,
+          "date": "2018-05-30T00:00:00+00:00"
+        },
+        {
+          "amount": 10,
+          "date": "2018-05-30T00:00:00+00:00"
+        },
+        {
+          "amount": 8,
+          "date": "2018-06-04T00:00:00+00:00"
+        },
+        {
+          "amount": 8,
+          "date": "2018-06-13T00:00:00+00:00"
+        },
+        {
+          "amount": 1,
+          "date": "2018-06-18T00:00:00+00:00"
+        },
+        {
+          "amount": 1,
+          "date": "2018-06-19T00:00:00+00:00"
+        },
+        {
+          "amount": 1,
+          "date": "2018-06-19T00:00:00+00:00"
+        },
+        {
+          "amount": 1,
+          "date": "2018-07-05T00:00:00+00:00"
+        },
+        {
+          "amount": 1,
+          "date": "2018-07-05T00:00:00+00:00"
+        },
+        {
+          "amount": 1,
+          "date": "2018-07-05T00:00:00+00:00"
+        },
+        {
+          "amount": 1,
+          "date": "2018-07-23T00:00:00+00:00"
+        },
+        {
+          "amount": 1,
+          "date": "2018-07-23T00:00:00+00:00"
+        }
+      ],
+      "totalPaymentReceived": 72
+    },
+    "nopaymentData": {
+      "code": 200,
+      "status": 200,
+      "message": "Success",
+      "billingAccountNumber": 7000965228,
+      "invoices": [
+        {
+          "invoiceNumber": "1479432"
+        }
+      ]
+    },
+    "nopaymentResponseData": {
+      "billingAccountNumber": 7000965228,
+      "invoiceNumber": "1479432",
+      "payments": []
+    }
+  },
+  "emptyResponseData": {
+    "cidn": 15054,
+    "billingAccounts": []
+  },
+  "invalidData": {
+    "code": 200,
+    "status": 200,
+    "message": "Success"
+  },
+    "invalidResponseData": {}
+}

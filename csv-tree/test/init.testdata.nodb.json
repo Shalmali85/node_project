@@ -1,0 +1,10 @@
+{
+  "couchbase": {
+    "url": "/config/couchbase.json"
+  },
+  "router": {
+    "schemaValidation": false,
+    "port": 3000,
+    "level": "debug"
+  }
+}
